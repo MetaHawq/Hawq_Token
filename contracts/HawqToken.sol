@@ -57,7 +57,7 @@ contract HawqToken is Context, IERC20,
     }
     
     function transitionWeb3() public view returns (string memory) {
-        return transitionedComplete
+        return transitionCompleted;
     }
 
    
