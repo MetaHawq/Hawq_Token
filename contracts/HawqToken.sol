@@ -55,11 +55,6 @@ contract HawqToken is Context, IERC20,
     constructor() AirdropContract() {
         _mint(msg.sender, total_token_supply*10**18);
     }
-    
-    function transitionWeb3() public view returns (string memory) {
-        return transitionCompleted;
-    }
-
    
     function name() public view virtual override returns (string memory) {
         return _name;
